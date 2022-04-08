@@ -1,13 +1,16 @@
 body{
   margin:0;
+
   background-color:rgba(44, 43, 61, 1);
   text-align:center;
   font-family: 'JetBrains Mono';
-  color: #FFFFFF;
+  color: rgb(255, 255, 255);
+  font-size:14px;
+  min-height:100vh;
 }
 
 #page{
-  width:1170px;
+  width:1087px;
   margin:auto;
 }
 
@@ -15,7 +18,7 @@ nav{
   display:flex;
   align-items:center;
   justify-content:space-between; 
-  padding:71px 0 107px;
+  padding:71px 0 107px 0;
 }
 nav ul{
   display:flex;
@@ -23,40 +26,60 @@ nav ul{
 }
 nav ul li{
   list-style:none;
+  font-weight:500;
 }
+
+nav img:hover,
+nav ul li:hover,
+footer a:hover{
+  cursor:pointer;
+  color:rgb(194, 194, 194);
+}
+
 main{
   display:flex;
   justify-content:space-between;
-  margin:0 0 107px 0;
+  margin:0 0 147px 0;
 }
+main img{
+  width:401px;
+}
+
+section{
+  margin-left:50px;
+  width:688px;
+}
+
 main h1{
   margin:0;
   font-size:36px;
   line-height:40px;
-  margin-bottom:59px;
-}
-section{
+  margin-bottom:58px;
 }
 main p{
-  color: #C2C2C2;
-  font-size:16px;
+  margin:0;
+  color: rgb(194, 194, 194);
+  font-size:15px;
   line-height:28px;
+  font-weight:400;
 }
 main span{
  color:rgba(0, 191, 166, 1);
+}
+
+footer .line{
+  margin:auto;
+  margin-bottom:27px;
+  width:568px;
+  border-top: 1px solid rgba(0, 191, 166, 1);
+}
+footer a{
+  text-decoration: none;
+  color:rgb(255, 255, 255);
 }
 
 #lock-img{
   position:fixed;
   left:20px;
   bottom:20px;
-}
-
-footer div{
-  width:568px;
-  border: 1px solid rgba(0, 191, 166, 1);
-}
-footer a{
-  text-decoration: none;
-  color:#C2C2C2;
 }
